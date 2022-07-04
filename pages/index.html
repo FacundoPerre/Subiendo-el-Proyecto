@@ -4,13 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="galeria, estilos de barba, barba, corte, estilo, moderno,">
-    <meta name="description" content="Estilos de Barba">
+    <meta name="keywords" content="barberia, corte, estilo, peluqueria, franquicia, negocio, estilista, barba,">
+    <meta name="description"
+        content="Peluquerías que cumplieran con estas características tradicionales comienza la expansión con salones yfranquicias en Argentina">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body class="fondo">
@@ -42,7 +43,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                            <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./galeria.html">Galeria</a>
@@ -61,58 +62,50 @@
                             <a class="nav-link" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-success bg-dark" type="submit">Busqueda</button>
-                    </form>
                 </div>
             </div>
         </nav>
-    </header>
+        <header>
 
-    <main>
-        <div class="grid">
-            <div class="TrimmedBeard">
-                <img src="./img/Trimmed Beard.jpg" alt="Estilo de corte de Barba">
+        <main id="index">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active imagenes">
+                        <img src="/img/allef-vinicius-IvQeAVeJULw-unsplash.jpg" class="d-block w-100" alt="Barbero cortando barba">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/allyson-carter-ClilMdu189E-unsplash.jpg" class="d-block w-100" alt="Persona de espaldas">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/andrea-donato-MNu0n-3BIKs-unsplash.jpg" class="d-block w-100" alt="Elementos de barberia">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/hai-phung-m4Pd_e-4zKs-unsplash.jpg" class="d-block w-100" alt="Barbero cortando pelo">
+                    </div>
+                </div>
             </div>
-            <div class="Ducktail">
-                <img src="./img/Ducktail.jpg" alt="Estilo de corte de Barba">
-            </div>
-            <div class="Beardstache">
-                <img src="./img/Beardstache.jpg" alt="Estilo de corte de Barba">
-            </div>
-            <div class="GaribaldiBeard">
-                <img src="./img/Garibaldi Beard.webp" alt="Estilo de corte de Barba">
-            </div>
-            <div class="BeardFade">
-                <img src="./img/Beard Fade.jpg" alt="Estilo de corte de Barba">
-            </div>
-            <div class="Bandholz">
-                <img src="./img/bandholz.jpg" alt="Estilo de corte de Barba">
-            </div>
-            <div class="nombreEstilo">
-                <h2>TrimmedBeard</h2>
-            </div>
-            <div class="nombreEstilo1">
-                <h2>Ducktail</h2>
-            </div>
-            <div class="nombreEstilo3">
-                <h2>Beardstache</h2>
-            </div>
-            <div class="nombreEstilo4">
-                <h2>GaribaldiBeard</h2>
-            </div>
-            <div class="nombreEstilo5">
-                <h2>BeardFade</h2>
-            </div>
-            <div class="nombreEstilo6">
-                <h2>Bandholz</h2>
-            </div>
-        </div>
-    </main>
+            <section class="presentacion">
+                <p class="historia">
+                    Historia <br> Los fundadores de La Peluqueria de Carlitos decidieron explorar un nicho en el rubro
+                    de las peluquerías, dándole un marco empresarial a lo que se conocía tradicionalmente.
+                    Con el foco en que cada profesional desarrolle su máximo potencial, se ideó un sistema donde los
+                    peluqueros dentro de los salones de Carlitos, solo deben realizar las tareas de estilismo, confiando
+                    en el equipo de profesionales en administración, marketing y comunicación las respectivas áreas del
+                    negocio. Esto ayuda a potenciar el conocimiento de todos los expertos y aplicarlo para ofrecerles un
+                    servicio diferencial en calidad y experiencia a nuestros clientes.
+                    Gracias a esto, el primer salón se inaugura con marcadas distinciones de las peluquerías
+                    tradicionales. Con los años, el mercado demandaba una mayor cantidad de peluquerías que cumplieran
+                    con estas características, y a partir de ese momento comienza la expansión de Carlitos con salones y
+                    franquicias en Argentina..
+                </p>
+                <div class="imagenHistoria">
+                    <img src="/img/alexandre-lecocq-Y5nIFhQlzlo-unsplash.jpg" alt="Barberia">
+                </div>
+            </section>
+        </main>
 
-    <footer
-        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top wow animate__animated animate__backInUp">
+        <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top wow animate__animated animate__backInUp">
         <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
                 <svg class="bi" width="30" height="24">

@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body class="fondo">
@@ -43,7 +43,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                            <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./galeria.html">Galeria</a>
@@ -67,62 +67,66 @@
         </nav>
         <header>
 
-        <main id="index">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active imagenes">
-                        <img src="./img/allef-vinicius-IvQeAVeJULw-unsplash.jpg" class="d-block w-100" alt="Barbero cortando barba">
+        <main>
+            <div class="contacto">
+                <div class="contact-wrapper">
+                    <div class="title">
+                        <h1>Contáctanos</h1>
                     </div>
-                    <div class="carousel-item">
-                        <img src="./img/allyson-carter-ClilMdu189E-unsplash.jpg" class="d-block w-100" alt="Persona de espaldas">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/andrea-donato-MNu0n-3BIKs-unsplash.jpg" class="d-block w-100" alt="Elementos de barberia">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/hai-phung-m4Pd_e-4zKs-unsplash.jpg" class="d-block w-100" alt="Barbero cortando pelo">
-                    </div>
+        
+                    <form action="#">
+                        <div class="name-wrap">
+                            <div class="input-box">
+                                <input type="text" autocomplete="off" id="fname" required>
+                                <label for="fname">Primer Nombre</label>
+                                <div class="bottom-line"></div>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" autocomplete="off" id="lname" required>
+                                <label for="lname">Apellido</label>
+                                <div class="bottom-line"></div>
+                            </div>
+                        </div>
+        
+                        <div class="input-box">
+                            <input type="email" autocomplete="off" id="email" required>
+                            <label for="email">Correo Electronico</label>
+                            <div class="bottom-line"></div>
+                        </div>
+        
+                        <div class="textarea-box">
+                            <textarea id="textarea" required></textarea>
+                            <label for="textarea">Dejanos tu Mensaje</label>
+                            <div class="bottom-line"></div>
+                        </div>
+        
+                        <div class="btn">
+                            <button>Enviar</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <section class="presentacion">
-                <p class="historia">
-                    Historia <br> Los fundadores de La Peluqueria de Carlitos decidieron explorar un nicho en el rubro
-                    de las peluquerías, dándole un marco empresarial a lo que se conocía tradicionalmente.
-                    Con el foco en que cada profesional desarrolle su máximo potencial, se ideó un sistema donde los
-                    peluqueros dentro de los salones de Carlitos, solo deben realizar las tareas de estilismo, confiando
-                    en el equipo de profesionales en administración, marketing y comunicación las respectivas áreas del
-                    negocio. Esto ayuda a potenciar el conocimiento de todos los expertos y aplicarlo para ofrecerles un
-                    servicio diferencial en calidad y experiencia a nuestros clientes.
-                    Gracias a esto, el primer salón se inaugura con marcadas distinciones de las peluquerías
-                    tradicionales. Con los años, el mercado demandaba una mayor cantidad de peluquerías que cumplieran
-                    con estas características, y a partir de ese momento comienza la expansión de Carlitos con salones y
-                    franquicias en Argentina..
-                </p>
-                <div class="imagenHistoria">
-                    <img src="./img/alexandre-lecocq-Y5nIFhQlzlo-unsplash.jpg" alt="Barberia">
-                </div>
-            </section>
         </main>
 
         <footer
-            class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top wow animate__animated animate__backInUp">
-            <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                    <svg class="bi" width="30" height="24">
-                        <use xlink:href="#bootstrap" /></svg>
-                </a>
-                <span class="mb-3 mb-md-0 text-muted">&copy; Facundo Perre</span>
-            </div>
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top wow animate__animated animate__backInUp">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap" /></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">&copy; Facundo Perre</span>
+        </div>
 
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#twitter" /></svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#instagram" /></svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#facebook" /></svg></a></li>
-            </ul>
-        </footer>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#twitter" /></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#instagram" /></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#facebook" /></svg></a></li>
+        </ul>
+    </footer>
     </head>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
