@@ -128,3 +128,72 @@
         margin: $espacioH2;
     }
 }
+
+@media (max-width:425px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 33vw);
+        grid-auto-flow: row;
+        grid-template-areas:
+            "nombreEstilo nombreEstilo1 nombreEstilo3"
+            "TrimmedBeard Ducktail Beardstache"
+            "nombreEstilo4 nombreEstilo5 nombreEstilo6"
+            "GaribaldiBeard BeardFade Bandholz";
+    }
+
+    .nombreEstilo {
+        grid-area: nombreEstilo;
+
+        .h2,
+        h2 {
+            font-size: $responsiveTamaño;
+        }
+    }
+
+    .nombreEstilo1 {
+        grid-area: nombreEstilo1;
+
+        .h2,
+        h2 {
+            font-size: $responsiveTamaño;
+        }
+    }
+
+
+.nombreEstilo3 {
+    grid-area: nombreEstilo3;
+
+    .h2,
+    h2 {
+        font-size: $responsiveTamaño;
+    }
+}
+
+
+.nombreEstilo4 {
+    grid-area: nombreEstilo4;
+  
+    .h2,
+    h2 {
+        font-size: $responsiveTamaño;
+    }
+}
+
+.nombreEstilo5 {
+    grid-area: nombreEstilo5;
+  
+    .h2,
+    h2 {
+        font-size: $responsiveTamaño;
+    }
+}
+
+.nombreEstilo6 {
+    grid-area: nombreEstilo6;
+  
+    .h2,
+    h2 {
+        font-size: $responsiveTamaño;
+    }
+}
+}
