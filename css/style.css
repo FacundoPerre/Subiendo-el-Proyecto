@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0; }
+
+.navbar a {
+  font-size: 18px;
+  font-weight: bold; }
+
+#index .carousel-inner {
+  height: 800px;
+  margin-top: 1rem; }
+
+#index .presentacion {
+  display: flex;
+  padding: 6rem;
+  background-color: black; }
+  #index .presentacion p:hover {
+    scale: 2.5px; }
+
+.presentacion img {
+  width: 700px;
+  height: 700px; }
+
+.historia {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  font-weight: bold;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: 6s; }
+
+.presentacion img:hover {
+  filter: blur(2px); }
+
+@media (max-width: 425px) {
+  .presentacion {
+    flex-direction: column;
+    margin-right: 2rem;
+    padding-left: 70px; }
+  .historia {
+    font-size: 10px;
+    width: 300px; }
+  .imagenHistoria img {
+    width: 300px;
+    height: 300px; }
+  .carousel-inner {
+    height: 300px;
+    margin-top: 1rem; } }
+
+.d-flex {
+  background-color: gray; }
+
+.backgraund {
+  background-color: black; }
+
+.fondo {
+  background-color: black; }
+
+.gridNosotros {
+  display: grid;
+  grid-template-columns: repeat(4, 25vw);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "nosotros nosotros nosotros nosotros" "foto1 foto2 foto3 foto4" "foto1 foto2 foto3 foto4" "foto1 foto2 foto3 foto4"; }
+
+.nosotros {
+  grid-area: nosotros;
+  height: 150px;
+  color: white;
+  margin-top: 1rem; }
+
+.foto1 {
+  grid-area: foto1;
+  background-image: url(/img/barbero1.jpg);
+  background-size: cover;
+  height: 1000px; }
+
+.foto2 {
+  grid-area: foto2;
+  background-image: url(/img/barbero2.jpg);
+  background-size: cover;
+  height: 1000px; }
+
+.foto3 {
+  grid-area: foto3;
+  background-image: url(/img/barbero3.jpg);
+  background-size: cover;
+  height: 1000px; }
+
+.foto4 {
+  grid-area: foto4;
+  background-image: url(/img/barbero4.jpg);
+  background-size: cover;
+  height: 1000px; }
+
+@media (max-width: 425px) {
+  .gridNosotros {
+    display: grid;
+    grid-template-columns: repeat(4, 25vw);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "nosotros nosotros nosotros nosotros" "foto1 foto1 foto1 foto1" "foto1 foto1 foto1 foto1" "foto1 foto1 foto1 foto1"; }
+  .historiaBarberos {
+    max-height: 500px; }
+  .responsive {
+    display: none; }
+  .foto1 {
+    max-height: 600px; }
+  .foto2 {
+    display: none; }
+  .foto3 {
+    display: none; }
+  .foto4 {
+    display: none; } }
+
+.contacto {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("bg_img.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+.contact-wrapper {
+  margin: 2rem 0;
+  flex: 0 1 520px;
+  display: flex;
+  height: auto;
+  flex-direction: column; }
+
+.contact-wrapper .title {
+  width: 100%; }
+
+.title h1 {
+  position: relative;
+  color: #fff;
+  font-size: 2.4rem;
+  text-align: center;
+  text-shadow: 0.2rem 0.2rem 0.6rem #222; }
+
+.title h1::first-letter {
+  color: grey;
+  font-size: 2.8rem; }
+
+.title h1::before {
+  position: absolute;
+  margin-left: 0.4rem;
+  content: '';
+  bottom: -0.4rem;
+  height: 5px;
+  width: 4rem;
+  background: grey;
+  border-radius: 0.2rem;
+  box-shadow: 0.2rem 0.2rem 1rem #222;
+  transition: all 0.3s ease; }
+
+.title h1:hover::before {
+  width: 6rem; }
+
+.contact-wrapper form {
+  margin: 1.4rem 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+
+form .name-wrap {
+  display: flex;
+  justify-content: space-between; }
+
+.name-wrap .input-box {
+  width: 48%; }
+
+@media (max-width: 440px) {
+  form .name-wrap {
+    flex-direction: column; }
+  .name-wrap .input-box {
+    width: 100% !important; } }
+
+form .input-box {
+  margin-top: 2.2rem;
+  height: 3.4rem;
+  width: 100%;
+  position: relative; }
+
+.input-box input,
+.textarea-box textarea {
+  padding-left: 1rem;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #333;
+  font-size: 1.2rem;
+  background: #fff;
+  border-radius: 0.1rem;
+  box-sizing: border-box;
+  border-bottom: 2px solid transparent;
+  box-shadow: 0.2rem 0.2rem 1rem #222; }
+
+.input-box .bottom-line,
+.textarea-box .bottom-line {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: steelblue;
+  border-radius: 0.1rem;
+  transform: scaleX(0);
+  transition: transform 0.3s ease; }
+
+input:focus ~ .bottom-line,
+textarea:focus ~ .bottom-line {
+  transform: scaleX(1); }
+
+.input-box label,
+.textarea-box label {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.3s ease; }
+
+input:focus ~ label,
+input:valid ~ label {
+  transform: translateY(-48px);
+  font-size: 1rem;
+  color: #fff;
+  left: 0;
+  text-shadow: 0 0 0.8rem #222; }
+
+form .textarea-box {
+  flex: 1 1 auto;
+  margin-top: 2.2rem;
+  position: relative; }
+
+.textarea-box textarea {
+  padding-top: 1rem;
+  width: 100%;
+  height: 160px;
+  box-sizing: border-box; }
+
+.textarea-box .bottom-line {
+  bottom: 0.2rem; }
+
+.textarea-box label {
+  top: 1rem;
+  left: 1rem;
+  transform: translateY(0); }
+
+textarea:focus ~ label,
+textarea:valid ~ label {
+  transform: translateY(-36px);
+  font-size: 1rem;
+  color: #fff;
+  left: 0; }
+
+form .btn {
+  margin-top: 1.8rem; }
+
+.btn button {
+  height: 3.4rem;
+  width: 8rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: steelblue;
+  border-radius: 0.1rem;
+  box-shadow: 0.2rem 0.2rem 1rem #222; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 33vw);
+  grid-auto-flow: row;
+  grid-template-areas: "nombreEstilo nombreEstilo1 nombreEstilo3" "TrimmedBeard Ducktail Beardstache" "nombreEstilo4 nombreEstilo5 nombreEstilo6" "GaribaldiBeard BeardFade Bandholz"; }
+
+.Beardstache {
+  grid-area: Beardstache; }
+  .Beardstache img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    gap: 1px;
+    height: 40vw;
+    border: solid white 1px; }
+
+.Ducktail {
+  grid-area: Ducktail; }
+  .Ducktail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    gap: 1px;
+    height: 40vw;
+    border: solid white 1px; }
+
+.GaribaldiBeard {
+  grid-area: GaribaldiBeard; }
+  .GaribaldiBeard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    gap: 1px;
+    height: 40vw;
+    border: solid white 1px; }
+
+.BeardFade {
+  grid-area: BeardFade; }
+  .BeardFade img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    gap: 1px;
+    height: 40vw;
+    border: solid white 1px; }
+
+.Bandholz {
+  grid-area: Bandholz; }
+  .Bandholz img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    gap: 1px;
+    height: 40vw;
+    border: solid white 1px; }
+
+.TrimmedBeard {
+  grid-area: TrimmedBeard; }
+  .TrimmedBeard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    gap: 1px;
+    height: 40vw;
+    border: solid white 1px; }
+
+.nombreEstilo {
+  grid-area: nombreEstilo;
+  text-align: center;
+  color: white;
+  text-align: auto;
+  border: solid white 1px; }
+  .nombreEstilo h2 {
+    margin: 20px; }
+
+.nombreEstilo1 {
+  grid-area: nombreEstilo1;
+  text-align: center;
+  color: white;
+  text-align: auto;
+  border: solid white 1px; }
+  .nombreEstilo1 h2 {
+    margin: 20px; }
+
+.nombreEstilo3 {
+  grid-area: nombreEstilo3;
+  text-align: center;
+  color: white;
+  text-align: auto;
+  border: solid white 1px; }
+  .nombreEstilo3 h2 {
+    margin: 20px; }
+
+.nombreEstilo4 {
+  grid-area: nombreEstilo4;
+  text-align: center;
+  color: white;
+  text-align: auto;
+  border: solid white 1px; }
+  .nombreEstilo4 h2 {
+    margin: 20px; }
+
+.nombreEstilo5 {
+  grid-area: nombreEstilo5;
+  text-align: center;
+  color: white;
+  text-align: auto;
+  border: solid white 1px; }
+  .nombreEstilo5 h2 {
+    margin: 20px; }
+
+.nombreEstilo6 {
+  grid-area: nombreEstilo6;
+  text-align: center;
+  color: white;
+  text-align: auto;
+  border: solid white 1px; }
+  .nombreEstilo6 h2 {
+    margin: 20px; }
