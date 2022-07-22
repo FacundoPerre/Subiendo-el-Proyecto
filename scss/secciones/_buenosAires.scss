@@ -28,7 +28,7 @@
         color: $colorLetra;
         font-size: x-large;
         border: solid gray;
-        max-height: 335px;
+        max-height: 365px;
         padding: 1rem;
     }
 }
@@ -48,6 +48,7 @@
             max-height: 700px;
             img{
                 margin-left: 3rem;
+                margin-top: 190px;
             }
         }
 
@@ -58,7 +59,7 @@
         }
     }
 
-    .buenosResponsive{
+    .bsResponsive{
         display: none !important;
     }
 }

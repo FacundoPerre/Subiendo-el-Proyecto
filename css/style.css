@@ -306,7 +306,7 @@ form .btn {
   color: white;
   font-size: x-large;
   border: solid gray;
-  max-height: 600px;
+  max-height: 660px;
   padding: 1rem; }
 
 @media (max-width: 425px) {
@@ -320,7 +320,8 @@ form .btn {
     max-height: 700px; }
     #Rosario div img {
       margin-right: none;
-      margin-left: 3rem; }
+      margin-left: 3rem;
+      margin-top: 650px; }
   #Rosario p {
     margin-top: 3px;
     border: none; }
@@ -355,7 +356,7 @@ form .btn {
   color: white;
   font-size: x-large;
   border: solid gray;
-  max-height: 335px;
+  max-height: 365px;
   padding: 1rem; }
 
 @media (max-width: 425px) {
@@ -368,12 +369,13 @@ form .btn {
     flex-direction: column;
     max-height: 700px; }
     #BuenosAires div img {
-      margin-left: 3rem; }
+      margin-left: 3rem;
+      margin-top: 190px; }
   #BuenosAires p {
     margin-top: 3px;
     border: none;
     margin-left: 10px; }
-  .buenosResponsive {
+  .bsResponsive {
     display: none !important; } }
 
 .grid {
