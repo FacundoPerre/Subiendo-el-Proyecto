@@ -33,3 +33,32 @@
     }
 }
    
+@media (max-width:425px) {
+    #BuenosAires {
+        h1 {
+            margin-left: 25%;
+        }
+
+        h2 {
+            margin-left: 34%;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            max-height: 700px;
+            img{
+                margin-left: 3rem;
+            }
+        }
+
+        p{
+            margin-top: 3px;
+            border: none;
+            margin-left: 10px;
+        }
+    }
+
+    .buenosResponsive{
+        display: none !important;
+    }
+}
