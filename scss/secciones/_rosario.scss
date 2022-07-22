@@ -35,3 +35,36 @@
         padding: 1rem;
     }
 }
+
+
+@media (max-width:425px) {
+    #Rosario {
+        h1 {
+            margin-left: 25%;
+        }
+
+        h2 {
+            margin-left: 42%;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            max-height: 700px;
+            img{
+                margin-right: none;
+                margin-left: 3rem;
+            }
+        }
+
+        p{
+            margin-top: 3px;
+            border: none;
+        }
+    }
+
+    div .rosarioResponsive{
+        display: none !important;
+    }
+
+    
+}
