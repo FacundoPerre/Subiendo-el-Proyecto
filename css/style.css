@@ -37,7 +37,7 @@
 @media (max-width: 425px) {
   .presentacion {
     flex-direction: column;
-    margin-right: 3rem;
+    margin-left: -50px;
     padding-left: 70px; }
   .historia {
     font-size: 10px;
@@ -310,6 +310,10 @@ form .btn {
   padding: 1rem; }
 
 @media (max-width: 425px) {
+  #body {
+    display: flex; }
+  .footer {
+    margin-top: 818px; }
   #Rosario h1 {
     margin-left: 25%; }
   #Rosario h2 {
@@ -321,12 +325,10 @@ form .btn {
     #Rosario div img {
       margin-right: none;
       margin-left: 3rem;
-      margin-top: 650px; }
+      margin-top: 585px; }
   #Rosario p {
     margin-top: 3px;
-    border: none; }
-  div .rosarioResponsive {
-    display: none !important; } }
+    border: none; } }
 
 #BuenosAires h1 {
   margin-top: 1rem;
@@ -360,6 +362,10 @@ form .btn {
   padding: 1rem; }
 
 @media (max-width: 425px) {
+  #body {
+    display: flex; }
+  .footer {
+    margin-top: 138px; }
   #BuenosAires h1 {
     margin-left: 25%; }
   #BuenosAires h2 {
@@ -501,7 +507,7 @@ form .btn {
 @media (max-width: 425px) {
   .grid {
     display: grid;
-    grid-template-columns: repeat(3, 33vw);
+    grid-template-columns: repeat(3, 33vh);
     grid-auto-flow: row;
     grid-template-areas: "nombreEstilo nombreEstilo1 nombreEstilo3" "TrimmedBeard Ducktail Beardstache" "nombreEstilo4 nombreEstilo5 nombreEstilo6" "GaribaldiBeard BeardFade Bandholz"; }
   .nombreEstilo {

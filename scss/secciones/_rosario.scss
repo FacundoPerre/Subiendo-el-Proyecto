@@ -38,6 +38,14 @@
 
 
 @media (max-width:425px) {
+    #body{
+        display: flex;
+    }
+
+    .footer{
+        margin-top: 818px;
+    }
+    
     #Rosario {
         h1 {
             margin-left: 25%;
@@ -53,7 +61,7 @@
             img{
                 margin-right: none;
                 margin-left: 3rem;
-                margin-top: 650px;
+                margin-top: 585px;
             }
         }
 
@@ -62,8 +70,5 @@
             border: none;
         }
     }
-
-    div .rosarioResponsive{
-        display: none !important;
-    }
 }
+

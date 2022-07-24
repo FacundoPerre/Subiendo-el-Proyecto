@@ -34,6 +34,14 @@
 }
    
 @media (max-width:425px) {
+    #body{
+        display: flex;
+    }
+
+    .footer{
+        margin-top: 138px;
+    }
+    
     #BuenosAires {
         h1 {
             margin-left: 25%;
