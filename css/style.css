@@ -312,8 +312,8 @@ form .btn {
 @media (max-width: 425px) {
   #body {
     display: flex; }
-  .footer {
-    margin-top: 818px; }
+  .footerRosario {
+    margin-top: 820px !important; }
   #Rosario h1 {
     margin-left: 25%; }
   #Rosario h2 {
